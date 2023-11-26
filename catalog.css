@@ -1,0 +1,163 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+h3{
+    color: #333;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover {
+    color: #f4f4f4;
+}
+
+/* Category Menu Styles */
+#category-menu {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ddd;
+}
+
+#category-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+#category-menu ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#category-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#category-menu a:hover {
+    color: #666;
+}
+
+/* Recipe Section Styles */
+#recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url('img/Chocolate\ Brownies.jpeg');
+    background-repeat: repeat;
+}
+
+.category {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.category h2 {
+    text-align: center;
+    color: #444;
+}
+
+.recipe {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    width: calc(100% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.recipe img {
+    max-width: 100%;
+    max-height: 300px; /* Adjust this value as needed */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-row {
+    display: flex;
+    gap: 10px; 
+}
+
+.image-row img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+
+.recipe h4 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.recipe p {
+    color: #666;
+    font-size: 14px;
+}
+
+.recipe a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.recipe a:hover {
+    background-color: #444;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .recipe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}
